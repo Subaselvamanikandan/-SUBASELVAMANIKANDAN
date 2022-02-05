@@ -1,0 +1,17 @@
+# SUBA SELVAMANIKANDAN
+
+
+#  simple game to find to the guess the no  in python
+
+
+import random
+
+no=random.randint(1,10)
+
+guess=int(input("enter the no:"))
+while  no!=guess:
+    print("try again")
+    guess=int(input("enter the no:"))
+
+else:
+    print("GOOD JOB\nyou guess that no",no)
