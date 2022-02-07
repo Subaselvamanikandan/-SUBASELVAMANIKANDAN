@@ -1,0 +1,21 @@
+# include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+int i,no,num;
+int lower=1,upper=10;
+ printf("enter the  no:\n");
+ scanf("%d",&no);
+ num = (rand() % (upper - lower + 1)) + lower;
+while (no!=num) {
+    printf("try again\n");
+    printf("enter the  no:\n");
+    scanf("%d",&no);
+}
+    if(no==num) {
+        printf("you guess is crt \n the no is  %d",no);
+    }
+
+  return 0;
+}
